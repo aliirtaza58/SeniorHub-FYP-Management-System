@@ -1,0 +1,25 @@
+# Java compiled output
+*.class
+*.jar
+*.war
+*.ear
+
+# JDK folder (large binary — bundled locally, not tracked in Git)
+jdk/
+
+# Assignment & submission documents
+*.docx
+*.pdf
+*.zip
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.DS_Store
+Thumbs.db
+
+# OS generated
+desktop.ini
