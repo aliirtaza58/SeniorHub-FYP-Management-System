@@ -19,8 +19,42 @@ This implementation covers **all functional requirements** outlined in the SDA A
 
 ## Prerequisites
 
-- **None.** A bundled JDK 25 (Eclipse Temurin) is included in the `jdk/` folder.
-- No system-wide Java installation required. Nothing is installed to your user or system directories.
+This project uses a **locally bundled JDK 25** (Eclipse Temurin). No system-wide Java installation is required.
+
+> ⚠️ The `jdk/` folder is **not included** in the GitHub repository (too large to track in Git). You must download and set it up once before running the project.
+
+### Setting Up the JDK (One-Time Setup)
+
+**Step 1 — Download the JDK**
+
+Go to the official Adoptium release page:
+
+> 🔗 https://adoptium.net/temurin/releases/?version=25
+
+On that page, select: **Operating System:** Windows · **Architecture:** x64 · **Package Type:** JDK · **File Type:** `.zip`
+
+Or use this **direct download link**:
+
+> 🔗 https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jdk_x64_windows_hotspot_25.0.3_9.zip
+
+**Step 2 — Extract and place the JDK**
+
+1. Extract the downloaded `.zip` file.
+2. Rename the extracted folder to exactly **`jdk`**.
+3. Place it inside the project root so the structure looks like this:
+
+```
+SeniorHub-FYP-Management-System/
+├── jdk/               ← place it here
+│   └── bin/
+│       ├── javac.exe
+│       └── javaw.exe
+├── SeniorHubApp.java
+├── run-local.bat
+└── README.md
+```
+
+Once the `jdk/` folder is in place, you are ready to run the project.
 
 ## How to Compile and Run
 
